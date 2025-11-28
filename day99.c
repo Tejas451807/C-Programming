@@ -11,8 +11,7 @@ struct Student {
 
 int main() {
     struct Student *s;
-
-    // Allocate memory dynamically
+    
     s = (struct Student*) malloc(sizeof(struct Student));
 
     if (s == NULL) {
@@ -20,7 +19,6 @@ int main() {
         return 1;
     }
 
-    // Input details
     printf("Enter student details:\n");
     printf("Name: ");
     scanf("%s", s->name);
@@ -29,11 +27,9 @@ int main() {
     printf("Marks: ");
     scanf("%f", &s->marks);
 
-    // Display student details
     printf("Name: %s | Roll: %d | Marks: %.0f\n", s->name, s->roll, s->marks);
-
-    // Free allocated memory
     free(s);
 
     return 0;
 }
+
