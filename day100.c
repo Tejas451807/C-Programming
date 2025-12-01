@@ -1,3 +1,5 @@
+// Use pointer to struct to modify and display data using -> operator
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -17,3 +19,4 @@ int main() {
     free(ptr);
     return 0;
 }
+
